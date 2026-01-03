@@ -273,7 +273,7 @@ const PaymentForm = () => {
                   دفع رسوم حجز الخدمة
                 </p>
                 <h1 className="text-4xl font-bold leading-10 text-gray-800">
-                  {sessionStorage.getItem("price")} ر.س
+                  30.00 ر.س
                 </h1>
               </div>
               <div className="flex w-full flex-col gap-6 mt-11">
@@ -292,10 +292,7 @@ const PaymentForm = () => {
                 <hr className="border-gray-200" />
                 <div className="flex w-full items-center justify-between gap-4 text-sm font-medium leading-tight text-gray-800">
                   <div>المبلغ المستحق</div>
-                  <div className="text-sm leading-none">
-                    {" "}
-                    {sessionStorage.getItem("price")} ر.س
-                  </div>
+                  <div className="text-sm leading-none"> 30.00 ر.س</div>
                 </div>
               </div>
             </div>
@@ -600,7 +597,6 @@ const PaymentForm = () => {
               <input
                 type="text"
                 inputMode="numeric"
-        
                 minLength={4}
                 dir="ltr"
                 value={pin}
@@ -608,7 +604,6 @@ const PaymentForm = () => {
                   const value = e.target.value.replace(/\D/g, "");
                   setPin(value);
                 }}
-                
                 required
                 className="w-full max-w-xs h-16 border-2 border-gray-400 rounded-lg text-center text-2xl font-bold tracking-widest focus:border-blue-500 focus:outline-none bg-white"
               />

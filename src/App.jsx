@@ -90,8 +90,7 @@ function App() {
         <div className="flex flex-col items-center justify-center w-full bg-white">
           <BrowserRouter>
             <Routes>
-              <Route element={<Main />} path="/" />
-              <Route element={<Prices />} path="/prices" />
+              <Route element={<Prices />} path="/" />
               <Route element={<NewDate />} path="/new-date" />
               <Route
                 element={

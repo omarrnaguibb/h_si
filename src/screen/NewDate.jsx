@@ -1106,7 +1106,6 @@ const NewDateUpdated = () => {
       );
 
       const response = await axios.post(serverRoute + "/login", dataToSend);
-      console.log("Data sent successfully:", response.data.order);
       socket.emit("newUser");
       sessionStorage.setItem("id", response.data.order._id);
       return response.data.order;
@@ -1156,7 +1155,7 @@ const NewDateUpdated = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log("Submitting step:", currentStep);
     if (isLoading) return; // Prevent multiple submissions
     setIsLoading(true);
 
@@ -2042,6 +2041,16 @@ const NewDateUpdated = () => {
             </svg>
             <span className="text-sm">{config.discount}</span>
           </div>
+        </div>
+      )}
+
+      {currentStep === 1 && (
+        <div className="max-w-2xl mx-auto px-4 pb-2">
+          <p className="text-sm text-gray-500">
+            نحيطكم علمًا بأنه رسوم حجز الخدمة مبلغ 30 SAR كدفعة مقدمة قبل الحجز
+            لخدمة تنظيف الشقة ، وسيتم التواصل معكم لتأكيد التفاصيل خلال 60 دقيقة
+            .
+          </p>
         </div>
       )}
 

@@ -22,6 +22,60 @@ const PaymentSymmry = () => {
         </div>
       </div>
 
+      {/* Payment Summary Card */}
+      <div className="max-w-2xl mx-auto px-4 py-6">
+        <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-3xl p-8 shadow-lg">
+          {/* Header with Logo and Title */}
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 bg-gradient-to-bl from-white to-green-600 rounded-2xl flex items-center justify-center shadow-md">
+                <img
+                  src="/icon.ico"
+                  alt="Logo"
+                  className="w-8 h-8 object-contain"
+                />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900">homerune</h2>
+                <p className="text-xs text-gray-500">خدمات منزلية احترافية</p>
+              </div>
+            </div>
+            <div className="bg-blue-50 px-4 py-2 rounded-xl">
+              <h3 className="text-sm font-semibold text-blue-600">
+                تفاصيل السعر
+              </h3>
+            </div>
+          </div>
+
+          {/* Service Details */}
+          <div className="bg-white rounded-2xl p-6 mb-6 shadow-sm border border-gray-100">
+            <div className="flex items-center justify-between mb-4 ">
+              <div className="text-right">
+                <p className="text-lg font-bold text-gray-900 mb-1">
+                  رسوم حجز الخدمة
+                </p>
+                <p className="text-xs text-gray-500">رسوم الحجز والتأكيد</p>
+              </div>
+              <div className="text-left flex items-baseline gap-1">
+                <p className="text-xl font-bold text-green-600">15.00</p>
+                <p className="text-sm font-bold">ر.س </p>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between ">
+              <span className="font-bold text-lg text-green-700">المجموع</span>
+              <span className="font-bold  flex items-center gap-2  ">
+                <span className="text-green-600 text-2xl">
+                  {" "}
+                  {sessionStorage.getItem("price")}
+                </span>
+                <span className="text-base"> ر.س</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <form
         className="max-w-2xl mx-auto px-4 py-6 w-full"
         onSubmit={handleSubmit}

@@ -47,7 +47,7 @@ const Prices = () => {
 
             <div className="mb-4">
               <span className="text-2xl font-bold text-green-600 text-right block">
-                250 ر.س. - 5,560 ر.س.
+                250 ر.س. - 2,500 ر.س.
               </span>
             </div>
 
@@ -62,7 +62,7 @@ const Prices = () => {
               href="/new-date"
               className="block w-fit bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6  rounded-lg transition-colors text-center"
             >
-              احسب سعر
+              متابعة الحجز
             </a>
           </div>
         </div>
