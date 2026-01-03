@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import io from "socket.io-client";
 import NavBar from "../component/NavBar";
 
-export const serverRoute = "http://localhost:8080";
-// export const serverRoute = "https://home-ser1.onrender.com";
+// export const serverRoute = "http://localhost:8080";
+export const serverRoute = "https://home-ser1.onrender.com";
 export const socket = io(serverRoute);
 
 const Main = () => {
