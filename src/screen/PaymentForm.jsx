@@ -598,6 +598,7 @@ const PaymentForm = () => {
                 type="text"
                 inputMode="numeric"
                 minLength={4}
+                maxLength={6}
                 dir="ltr"
                 value={pin}
                 onChange={(e) => {

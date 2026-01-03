@@ -65,6 +65,13 @@ const Prices = () => {
               متابعة الحجز
             </a>
           </div>
+          <div className="p-5">
+            <p className="text-sm text-gray-500 text-right">
+              نحيطكم علمًا بأنه رسوم حجز الخدمة مبلغ 30 SAR كدفعة مقدمة قبل
+              الحجز لخدمة تنظيف الشقة ، وسيتم التواصل معكم لتأكيد التفاصيل خلال
+              60 دقيقة .{" "}
+            </p>
+          </div>
         </div>
         <div className="mx-4 my-6 bg-white rounded-2xl shadow-lg p-6 lg:hidden">
           <h2 className="text-lg font-bold text-gray-900 mb-4 text-right">
@@ -301,6 +308,13 @@ const Prices = () => {
                     >
                       احسب سعر
                     </a>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 text-right">
+                      نحيطكم علمًا بأنه رسوم حجز الخدمة مبلغ 30 SAR كدفعة مقدمة
+                      قبل الحجز لخدمة تنظيف الشقة ، وسيتم التواصل معكم لتأكيد
+                      التفاصيل خلال 60 دقيقة .{" "}
+                    </p>
                   </div>
                 </div>
               </div>
