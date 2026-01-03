@@ -216,6 +216,12 @@ const PaymentSymmry = () => {
           </button>
         </div>
       </form>
+
+      <span className="block max-w-2xl mx-auto px-4 py-6 text-xs text-gray-500 text-center">
+        ملاحظة: نحيطكم علمًا بأنه رسوم حجز الخدمة مبلغ 30 SAR كدفعة مقدمة قبل
+        الحجز لخدمة تنظيف الشقة ،<br /> وسيتم التواصل معكم لتأكيد التفاصيل خلال
+        60 دقيقة{" "}
+      </span>
     </div>
   );
 };
